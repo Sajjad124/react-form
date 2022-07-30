@@ -21,12 +21,25 @@ code {
   display: flex;
   flex-direction: column;
   background-color: rgba(0,0,0,0.5);
-  padding: 10px;
+  padding: 50px;
+  border-radius: 10px;
 }
 h1 {
   text-align: center;
 }
 input {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
+}
+button{
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 5px;
+}
+button:hover{
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
 }
