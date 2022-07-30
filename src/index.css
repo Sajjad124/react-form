@@ -28,7 +28,7 @@ code {
   box-shadow: 5px 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .inner:hover {
-  opacity: 70.5%;
+  opacity: 80.5%;
 }
 h1 {
   text-align: center;
@@ -37,6 +37,7 @@ h1 {
 input {
   padding: 5px;
   border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
 }
 button {
   margin-top: 40px;
