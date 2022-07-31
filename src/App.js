@@ -1,13 +1,17 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-const inputEvent = () =>{
-  console.log("clicked")
+  const[name,setName] = useState();
+
+  const inputEvent = (event) =>{
+  console.log(event.target.value)
+  setName(event.target.value)
 }
   return (
     <div className="div-main">
       <div className="inner">
-        <h1>Hello</h1>
+        <h1>Hello {name}</h1>
         <input type="text" placeholder="Enter input" onChange={inputEvent} />
         <button>Click Me 👍</button>
       </div>

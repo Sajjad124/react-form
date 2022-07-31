@@ -20,6 +20,7 @@ code {
   background-color: rgb(12, 51, 51);
 }
 .inner {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
@@ -38,9 +39,8 @@ input {
   padding: 7px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
-  width: 300px;
-  color:white;
-
+  max-width: 100%;
+  color: white;
 }
 button {
   margin-top: 40px;
