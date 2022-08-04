@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-
+import { hadia } from "./hadia";
 function App() {
   const [name, setName] = useState("");
   const [fullName, setFullName] = useState();
 
-  const onSubmit = () => {
+  const onSubmits = (event) => {
+    event.preventDefault();
     setFullName(name);
   };
   const inputEvent = (event) => {
@@ -14,16 +15,20 @@ function App() {
   };
   return (
     <div className="div-main">
-      <div className="inner">
-        <h1>Hello {fullName}</h1>
-        <input
-          type="text"
-          placeholder="Enter input"
-          value={name}
-          onChange={inputEvent}
-        />
-        <button onClick={onSubmit}>Click Me 👍</button>
-      </div>
+      <form onSubmit={onSubmits}>
+        <div className="inner">
+          <h1>Hello {fullName}</h1>
+          <input
+            type="text"
+            placeholder="Enter input"
+            value={name}
+            onChange={inputEvent}
+          />
+          <button type="submit">Click Me 👍</button>
+        </div>
+      </form>
+
+      <hadia></hadia>
     </div>
   );
 }
