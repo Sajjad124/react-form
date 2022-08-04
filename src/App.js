@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import { hadia } from "./hadia";
 function App() {
   const [name, setName] = useState("");
   const [fullName, setFullName] = useState();
