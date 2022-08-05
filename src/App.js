@@ -26,7 +26,6 @@ function App() {
           <button type="submit">Click Me 👍</button>
         </div>
       </form>
-
       <hadia></hadia>
     </div>
   );
