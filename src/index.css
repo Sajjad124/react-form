@@ -28,12 +28,12 @@ code {
   border-radius: 5px;
   box-shadow: 5px 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-.inner:hover {
-  opacity: 40.5%;
-}
+/* .inner:hover {
+  opacity: 70.5%;
+} */
 h1 {
   text-align: center;
-  color: rgb(9, 37, 23);
+  color: rgba(0,0,0,0.8);
   width: 400px;
 }
 input {
