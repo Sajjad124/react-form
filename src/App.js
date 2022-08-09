@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 function App() {
   const [fullName, setFullName] = useState({
-    fname: "",
+    fName: "",
     lName: "",
   });
 
@@ -13,8 +13,18 @@ function App() {
   const inputEvent = (event) => {
     console.log(event.target.value);
     console.log(event.target.name);
-    console.log(event.target.placeholder);
-    setFullName(event.target.value);
+    const value = event.target.value;
+    const name = event.target.name;
+
+    setFullName((prevValue) => {
+      // console.log(prevValue.fName);
+      if (name === "fName") {
+        return {
+          fName: value,
+          lName: prevValue.lName,
+        };
+      }
+    });
   };
 
   const onSubmits = (event) => {
