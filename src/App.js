@@ -24,6 +24,12 @@ function App() {
           lName: prevValue.lName,
         };
       }
+      else if (name === "lName") {
+        return {
+          fName: prevValue.fName,
+          lName: value,
+        };
+      }
     });
   };
 
