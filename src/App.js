@@ -12,6 +12,8 @@ function App() {
 
   const inputEvent = (event) => {
     console.log(event.target.value);
+    console.log(event.target.name);
+    console.log(event.target.placeholder);
     setFullName(event.target.value);
   };
 
