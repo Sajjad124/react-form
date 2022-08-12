@@ -15,10 +15,12 @@ function App() {
   const inputEvent = (event) => {
     console.log(event.target.value);
     console.log(event.target.name);
-    const value = event.target.value;
-    const name = event.target.name;
-    const email = event.target.email;
-    const number = event.target.number;
+    // const value = event.target.value;
+    // const name = event.target.name;
+    const { name, value, email, number } = event.target;
+
+    // const email = event.target.email;
+    // const number = event.target.number;
 
     setFullName((prevValue) => {
       // console.log(prevValue.fName);
@@ -26,11 +28,29 @@ function App() {
         return {
           fName: value,
           lName: prevValue.lName,
+          email: prevValue.email,
+          number: prevValue.number,
         };
       } else if (name === "lName") {
         return {
           fName: prevValue.fName,
           lName: value,
+          email: prevValue.email,
+          number: prevValue.number,
+        };
+      } else if (name === "email") {
+        return {
+          fName: prevValue.fName,
+          lName: prevValue.lName,
+          email: value,
+          number: prevValue.number,
+        };
+      } else if (name === "number") {
+        return {
+          fName: prevValue.fName,
+          lName: prevValue.lName,
+          email: value,
+          number: prevValue.number,
         };
       }
     });
