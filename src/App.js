@@ -49,8 +49,8 @@ function App() {
         return {
           fName: prevValue.fName,
           lName: prevValue.lName,
-          email: value,
-          number: prevValue.number,
+          email: prevValue.email,
+          number: value,
         };
       }
     });
@@ -67,8 +67,10 @@ function App() {
     <div className="div-main">
       <form onSubmit={onSubmits}>
         <div className="inner">
-          <h1>Hello{fullName.fName + +fullName.lName} </h1>
-          <h4></h4>
+          <h1>Input Form</h1>
+          <h4>
+            {fullName.email} {fullName.number}
+          </h4>
           <input
             type="text"
             placeholder="Enter input"
@@ -98,6 +100,9 @@ function App() {
             value={fullName.number}
           />
           <button type="submit">Click Me 👍</button>
+          <h2>
+            {fullName.fName} {fullName.lName}
+          </h2>
         </div>
       </form>
     </div>
