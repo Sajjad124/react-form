@@ -23,7 +23,7 @@ function App() {
     // const number = event.target.number;
 
     setFullName((prevValue) => {
-      // console.log(prevValue.fName);
+
       if (name === "fName") {
         return {
           fName: value,
