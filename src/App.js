@@ -17,13 +17,12 @@ function App() {
     console.log(event.target.name);
     // const value = event.target.value;
     // const name = event.target.name;
-    const { name, value, } = event.target;
+    const { name, value } = event.target;
 
     // const email = event.target.email;
     // const number = event.target.number;
 
     setFullName((prevValue) => {
-
       if (name === "fName") {
         return {
           fName: value,
@@ -91,6 +90,7 @@ function App() {
             name="email"
             onChange={inputEvent}
             value={fullName.email}
+            autoComplete="off"
           />
           <input
             type="number"
