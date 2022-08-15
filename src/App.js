@@ -17,7 +17,7 @@ function App() {
     console.log(event.target.name);
     // const value = event.target.value;
     // const name = event.target.name;
-    const { name, value, email, number } = event.target;
+    const { name, value, } = event.target;
 
     // const email = event.target.email;
     // const number = event.target.number;
